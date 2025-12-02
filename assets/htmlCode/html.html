@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Learn HTML basics.">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="300">
+  <meta property="og:title" content="Learn HTML Fast">
+  <meta property="og:description" content="A complete beginner's guide to HTML.">
+  <meta property="og:image" content="https://example.com/image.jpg">
+  <meta property="og:url" content="https://example.com/html-guide">
+  <meta property="og:type" content="website">
+
+  <title>HTML Element Demo</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <style>
+    a:hover { color: red; }
+  </style>
+  <script src="script.js" defer></script>
+  <base href="https://example.com/" target="_blank">
+</head>
+<body>
+
+  <header>
+    <h1 id="main-title" title="This is a main heading">HTML Demo Page</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#content" title="Jump to main content">Content</a></li>
+      <li><a href="#form" target="_self">Form</a></li>
+    </ul>
+  </nav>
+
+  <main id="content">
+    <section>
+      <h2>Text Elements</h2>
+      <p>This is a <strong>strong</strong> and <em>emphasized</em> paragraph. Here's <b>bold</b>, <i>italic</i>, <u>underlined</u>, <mark>highlighted</mark>, <small>small</small>, and <code>inline code</code>. Use <span class="note">span</span> for inline blocks.</p>
+      <p><blockquote cite="https://example.com">A blockquote with source.</blockquote></p>
+      <p><cite>— HTML Guide</cite></p>
+      <q cite="https://example.com">Short inline quote</q>
+      <address>Contact us at <a href="mailto:info@example.com">info@example.com</a> or <a href="tel:+1234567890">+123-456-7890</a></address>
+    </section>
+
+    <section>
+      <h2>Lists</h2>
+      <ul>
+        <li>Unordered item</li>
+      </ul>
+      <ol start="5" reversed>
+        <li>Ordered item</li>
+      </ol>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Tables</h2>
+      <table>
+        <caption>Sample Table</caption>
+        <colgroup><col span="2" style="width:50%"></colgroup>
+        <thead><tr><th scope="col">Name</th><th scope="col">Age</th></tr></thead>
+        <tbody><tr><td>Alice</td><td>30</td></tr></tbody>
+        <tfoot><tr><td colspan="2">End</td></tr></tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Forms</h2>
+      <form action="/submit" method="POST" target="_self" autocomplete="on" id="form">
+        <fieldset> <!-- You can group related inputs together using the fieldset element-->
+          <legend>Sign Up</legend> <!-- legend element provides a caption to describe the group of inputs-->>
+          <label for="name">Name:</label> <!--The 'for' attribute on the label element should match the 'id' attribute on the input element-->
+          <input 
+			type="text" 
+			id="name" 
+			name="username" 
+			minlength="4" 
+			maxlength="35" 
+			placeholder="Your Name" 
+			required> <!-- 'name' attribute indicates what value is on the document created-->>
+          <label for="desc">Description:</label>
+          <textarea id="desc" rows="3" cols="30" placeholder="Tell us about you"></textarea>
+          <label for="options">Options:</label>
+          <select id="options" name="choice" required>
+            <option value="a">Option A</option>
+            <option value="b" selected>Option B</option>
+          </select>
+          <label for="datalist">Pick:</label>
+          <input readonly list="dataoptions" name="picked" id="datalist">
+		  <input type="button" value="Show Alert"/>
+          <datalist id="dataoptions">
+            <option value="Item 1">
+            <option value="Item 2">
+          </datalist>
+          <button type="submit" disabled>Submit</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section>
+      <h2>Media</h2>
+      <figure>
+        <img src="image.jpg" alt="Sample Image" width="200" height="100">
+        <figcaption>Example Image</figcaption>
+      </figure>
+      <audio controls autoplay loop muted>
+        <source src="audio.mp3" type="audio/mpeg">
+      </audio>
+      <video controls poster="poster.jpg" width="320" height="240">
+        <source src="video.mp4" type="video/mp4">
+        <track kind="subtitles" src="subs.vtt" srclang="en" label="English">
+      </video>
+    </section>
+
+    <section>
+      <h2>Interactive Elements</h2>
+      <details open>
+        <summary>More Info</summary>
+        <p>This is hidden until expanded.</p>
+      </details>
+      <dialog open>This is a modal dialog.</dialog>
+      <template id="cardTemplate"><div class="card">Template Content</div></template>
+      <slot name="custom-content"></slot>
+    </section>
+
+    <section>
+      <h2>Other Tags</h2>
+      <div><p>DIV element</p></div>
+      <article><p>Article section</p></article>
+      <aside><p>Aside content</p></aside>
+      <footer>Footer content</footer>
+      <iframe src="https://example.com/embed" width="600" height="400" title="Iframe Demo"
+              name="demoFrame" allow="fullscreen; camera" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+    </section>
+
+    <section>
+      <h2>Date & Time</h2>
+      <p><time datetime="2025-04-30">April 30, 2025</time></p>
+      <p><time datetime="14:30">2:30 PM</time></p>
+      <p><time datetime="2025-04-30T14:30">April 30, 2025 at 2:30 PM</time></p>
+      <p><time datetime="--04-30">April 30</time></p>
+    </section>
+
+    <section>
+      <h2>Special Text & Entities</h2>
+      <p>H<sub>2</sub>O is water. E = mc<sup>2</sup>.</p>
+      <pre>Preformatted   text
+      with line breaks.</pre>
+      <p><u>Underlined</u> <s>Strikethrough</s> <ruby>漢<rt>kan</rt>字<rt>ji</rt></ruby></p>
+      <p>Entities: &lt; &gt; &amp; &quot; &apos; &copy; &reg; &euro; &rarr;</p>
+    </section>
+
+  </main>
+
+</body>
+</html>

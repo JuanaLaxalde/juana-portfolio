@@ -1,0 +1,53 @@
+html {
+	font-family: sans-serif;
+}
+
+body {
+	background-color: rgb(189, 233, 226);
+}
+
+#container {
+	background-color: white;
+	margin: 5% 10%;
+	padding: 30px 20px;
+}
+
+.title {
+	text-align: center;
+}
+
+
+.title h1 {
+	font-size: 2.6em;
+	font-family: 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.bold h2 {
+	font-size: 1.3em;
+}
+
+.italic h3 {
+	font-family: arial;
+	font-size: 1.5em;
+	font-style:italic;
+	font-weight: 100;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.paragraphs p::first-letter {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+
+

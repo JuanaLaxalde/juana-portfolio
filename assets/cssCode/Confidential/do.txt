@@ -1,0 +1,45 @@
+2. You should have an #email selector that sets its elements' padding on all sides to 50px.
+3. You should have an #email selector that sets its elements' margin-top to 50px.
+4. You should have an #email selector that sets its elements' width to 500px.
+6. Your #email element should have a box-sizing of border-box.
+9. Your #confidential element should have its display set to inline-block.
+10. Your #top-secret element should have its display set to inline-block.
+11. Your #confidential element should have a padding on all sides.
+12. Your #top-secret element should have a padding on all sides.
+13. Your #confidential element should have a left margin.
+14. Your #top-secret element should have a left margin.
+17. Your #confidential element's text should be CONFIDENTIAL. You have either omitted the text, or have a typo.
+18. Your #top-secret element's text should be TOP SECRET. You have either omitted the text, or have a typo.
+
+FOOl
+https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/RWS_Tarot_00_Fool.jpg/960px-RWS_Tarot_00_Fool.jpg
+
+MAGICIAN
+https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/RWS_Tarot_01_Magician.jpg/960px-RWS_Tarot_01_Magician.jpg
+
+PRIESTRESS
+https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/250px-RWS_Tarot_02_High_Priestess.jpg
+
+EMPRESS
+https://upload.wikimedia.org/wikipedia/commons/d/d2/RWS_Tarot_03_Empress.jpg 
+
+EMPEROR
+https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/RWS_Tarot_04_Emperor.jpg/960px-RWS_Tarot_04_Emperor.jpg
+
+1. You should have a main element with an id of playing-cards.
+2. You should have at least three div elements with a class of card within your #playing-cards element.
+3. Each of your .card elements should have a width and height.
+4. Each of your .card elements should have exactly three div elements as children.
+5. You should have a div with a class of left within each .card element.
+6. You should have a div with a class of middle within each .card element.
+7. You should have a div with a class of right within each .card element.
+8. You should have a #playing-cards selector that sets its elements' display to flex.
+9. You should have a #playing-cards selector that sets its elements' justify-content to center.
+10. You should have a #playing-cards selector that sets its elements' flex-wrap to wrap.
+11. You should have a #playing-cards selector that sets its elements' gap to 20px.
+12. You should have a .card selector that sets its elements' display to flex.
+13. You should have a .card selector that sets its elements' justify-content to space-between.
+14. You should have a .left selector that sets its elements' align-self to flex-start.
+15. You should have a .middle selector that sets its elements' align-self to center.
+16. You should have a .right selector that sets its elements' align-self to flex-end.
+17. You should have a .middle selector that sets its elements' flex-direction to column.

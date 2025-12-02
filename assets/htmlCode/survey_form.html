@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="'en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Anime Survey Form</title>
+	</head>
+
+	<body>
+		<h1 id="title">Anime Survey Form</h1>
+		<p id="description">Help us learn more about the Anime community!</p>
+		
+		<form id="survey-form">
+			<label for="name-label">Full Name:</label>
+			<input required id="name-label" name="name" type="text" placeholder="Ex. Juana Laxalde"> </br>
+
+			<label for="email-label">Email:</label>
+			<input required id="email-label" name="email" type="email" placeholder="example@email.com"> </br>
+
+			<label for="number-label">Age:</label>
+			<input required id="number-label" name="age" type="number" min="10" max="100" placeholder="26">	</br>
+			
+			<p><label for="genre?">What is your favourite genre?</label></p>
+			<select id="genre?" name="genre?">
+				<option value="shounen">Shounen</option>
+				<option value="shojo">Shojo</option>
+				<option value="seinen">Seinen</option>
+				<option value="josei">Josei</option>
+				<option value="kodomomuke">Kodomomuke</option>
+			</select>
+
+			<p>How many shows have you watched so far?</p>
+			<label for="shows-watched">Less than 20</label>
+			<input required id="shows-watched" name="shows-watched" type="radio">
+
+			<label for="shows-watched">Less than 50</label>
+			<input required id="shows-watched" name="shows-watched" type="radio">
+
+			<label for="shows-watched">Less than 100</label>
+			<input required id="shows-watched" name="shows-watched" type="radio">
+
+
+			<p>From these popular shows, select all the ones you have watched:</p>
+
+			<label>One Piece</label>
+			<input type="checkbox" id="popular-shows" name="popular-shows" value="one-piece"/>
+			
+			<label>Bleach</label>
+			<input type="checkbox" id="popular-shows" name="popular-shows" value="bleach"/>
+
+			<label>Naruto</label>
+			<input type="checkbox" id="popular-shows" name="popular-shows" value="naruto"/>
+
+			<label>Berserk</label>
+			<input type="checkbox" id="popular-shows" name="popular-shows" value="berserk"/>
+
+			<label>Attack on Titan</label>
+			<input type="checkbox" id="popular-shows" name="popular-shows" value="attack-on-titan"/>			
+			
+			<p>Tell us who your favourite characters are (from any show):</p>
+			<textarea id="fav-character" name="fav-character" col="3" row="5"></textarea>
+			
+		</form>
+	
+	</body>
+<html>

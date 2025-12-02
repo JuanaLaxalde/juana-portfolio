@@ -1,0 +1,83 @@
+HTML REQUIREMENTS (structure and class names)
+<h1> element
+Text: Book Inventory
+Only one h1 in the page
+<table> element
+Must come after the h1
+5 columns (th) with the following headers (in order):
+Title
+Author
+Category
+Status
+Rate
+Table rows
+Minimum: 4 rows
+First row is headers (<thead> or first <tr> with <th>)
+All other rows: use <tr> with one of the following classes:
+read
+to-read
+in-progress
+
+Status column
+<td> must contain a <span> element
+The <span> must have class status
+Inner text must be one of:
+Read (for .read row)
+To Read (for .to-read row)
+In Progress (for .in-progress row)
+
+Rate column
+<td> must contain a <span> element
+The <span> must have class rate
+If the row has class read, then .rate should also have an additional class:
+one, two, or three (for rating)
+Inside each .rate, there must be three empty <span> elements
+✅ CSS REQUIREMENTS (selectors, attributes, styles)
+Attribute selectors targeting tr elements by class
+[class="read"], [class="to-read"], [class="in-progress"]
+Use background-image: linear-gradient(...)
+Display style
+All <span> elements must have:
+display: inline-block
+Attribute selectors targeting .status
+[class~="read"] .status, [class~="to-read"] .status, [class~="in-progress"] .status
+Set border and background-image for each
+Attribute selectors for .status and .rate
+[class="status"], [class^="rate"]
+Set height, width, and padding
+Target child <span> elements inside .rate
+span[class^="rate"] > span
+Set border, border-radius, margin, height, width, and background-color
+Target the first, first-two, and all three rate spans depending on rating
+.rate.one > span:nth-child(1)
+Apply background-image: linear-gradient(...)
+.rate.two > span:nth-child(-n+2)
+Apply background-image: linear-gradient(...)
+.rate.three > span
+Apply background-image: linear-gradient(...)
+
+---------------------------------------------------
+
+Title: The Night Circus
+Author: Erin Morgenstern
+Category: Fantasy
+Status: Read
+Rate: Three
+2.
+Title: Educated
+Author: Tara Westover
+Category: Memoir
+Status: To Read
+Rate: —
+3.
+Title: The Martian
+Author: Andy Weir
+Category: Science Fiction
+Status: In Progress
+Rate: —
+4.
+Title: Pachinko
+Author: Min Jin Lee
+Category: Historical Fiction
+Status: Read
+Rate: Two

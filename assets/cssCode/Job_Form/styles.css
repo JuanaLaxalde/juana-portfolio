@@ -1,0 +1,68 @@
+h1 {
+	font: Arial;
+	text-align: center;
+}
+body {
+	background-color: rgb(99, 99, 99);
+	font-size: 1.5rem;
+}
+
+.container {
+	margin: auto;
+	width: 80%;
+	max-width: 1000px;
+	background-color: white;
+	padding:40px;
+	border-radius: 10px;
+	box-shadow: 0, 0, 5px, 5px;
+}
+
+textarea, input, select, button {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 100%;
+	border-radius: 5px;
+	min-height: 2rem;
+	font-size: 1rem;
+}
+
+fieldset input{
+	display: inline;
+	width: auto;
+}
+
+input:focus, textarea:focus {
+	border: 2px solid rgb(199, 214, 33);
+}
+
+input:valid, select:valid, textarea:valid {
+	border: 2px solid green;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+	border: 2px solid red;
+}
+
+button:hover {
+	background-color: green;
+	color: black;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.radio-group input[type="radio"]:checked {
+	background-color: green;
+	color: black;
+	border: 1px solid black;
+	box-shadow: 0 0 5px;
+}
+
+.radio-group input[type="radio"]:checked + label{
+	color: green;
+}
+
+input:first-of-type {
+  background-color: lightyellow;
+  border: 2px solid rgb(203, 51, 51);
+}
+

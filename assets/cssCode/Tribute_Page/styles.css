@@ -1,0 +1,59 @@
+body {
+	background-color: white; 
+	font-family: Tahoma;
+}
+
+main {
+	background-color: rgb(222, 222, 222);
+	color: rgb(63, 63, 63);
+	text-align: center;
+	width: 80%;
+	margin: 15px auto;
+	padding: 15px 0;
+	border-radius: 5px;
+}
+
+#title {
+	font-weight: bold;
+	font-size: 2rem;
+	padding: 10px;
+	margin: 10px;
+}
+
+#main > p {
+	padding: 10px 0;
+}
+
+#img-div {
+	background-color: white;
+	padding:0 5px 10px 5px;
+	width: 95%;
+	text-align: center;
+	margin: auto;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	justify-content: center;
+	margin: 5px auto;
+}
+
+#img-caption {
+	width: 95%;
+	margin: 20px auto;
+}
+
+#tribute-info {
+	text-align: left;
+	width:80%;
+	margin: 40px auto;
+	letter-spacing: 0.05em;
+	font-weight: 50;
+}
+
+#tribute-info > ul > li {
+	margin-bottom: 15px;
+}
+

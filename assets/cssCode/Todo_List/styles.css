@@ -1,0 +1,27 @@
+.todo-list li {
+	background-color: aquamarine;
+  line-height: 1.5;
+  margin-bottom: 10px;  /* space between lines */
+  border-radius: 6px;   /* rounded edges */
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color:black;
+}
+
+a:active {
+  color:yellow;
+}
+
+a:visited {
+  color:purple;
+}
+
+a:focus {
+	outline: yellow;
+}

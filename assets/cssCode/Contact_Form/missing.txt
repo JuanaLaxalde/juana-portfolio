@@ -1,0 +1,11 @@
+5. Your type=text input field should have an id, a name, and a required attribute.
+7. Your type=email input field should have an id, a name, and a required attribute.
+9. Within the form, you should have a button element with a type attribute of submit.
+10. Your button should have a text of "Submit".
+17. The .form-container element should have padding.
+19. Your labels should have a margin and font color.
+20. Your input elements should have a width, padding, and a margin on the bottom.
+21. Your textarea element should have a width, padding, margin on the bottom.
+22. Your button element should have a background color.
+23. Your button element should have a font size.
+24. Your button element should have a hover effect that changes the background color.

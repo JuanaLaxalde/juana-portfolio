@@ -1,0 +1,45 @@
+body {
+	background-color:black;
+}
+.blog-post-card {
+	border-radius:20px;
+	background-color: white;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	width: 70%;
+	text-align: center;
+}
+
+.post-content {
+	padding: 20px;
+}
+
+.read-more {
+	color: black;
+	background-color: burlywood;
+	padding:5px 10px;
+	margin:20px;
+	border-radius:5px;
+	text-decoration:none;
+	display:inline-block;
+}
+
+.read-more:hover {
+	background-color: bisque;
+}
+
+.post-img {
+	width:100%;
+	border-bottom:3px solid black;
+}
+
+.post-title {
+	margin:5% 10%;
+	color: burlywood;
+}
+
+.post-excerpt {
+	margin:5% 10%;
+	color: gray;
+}

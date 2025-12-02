@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accessible Demo Site</title>
+  <style>
+    [role="dialog"] {
+      display: none;
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      background: #fff;
+      padding: 1em;
+      border: 2px solid #333;
+      box-shadow: 0 0 10px #000;
+    }
+    [role="dialog"].active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- The banner role identifies site-wide content at the top -->
+  <header role="banner" aria-label="Site header">
+    <h1>My Accessible Website</h1>
+
+    <!-- The navigation role labels the navigation region -->
+    <nav role="navigation" aria-label="Main menu">
+      <ul>
+        <!-- role="link" is implicit, but shown here for demonstration -->
+        <li><a href="#" role="link">Home</a></li>
+        <li><a href="#" role="link">About</a></li>
+        <li><a href="#" role="link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- The main role identifies the central content area -->
+  <main role="main">
+    <!-- region is a landmark for important sections -->
+    <section role="region" aria-labelledby="news-heading">
+      <h2 id="news-heading">Latest News</h2>
+
+      <!-- role="status" makes this a live region for updates -->
+      <p role="status" aria-live="polite">
+        Welcome! Updates will appear here.
+      </p>
+    </section>
+
+    <!-- A button that opens a dialog. aria-haspopup indicates a popup is triggered -->
+    <button 
+      aria-haspopup="dialog" 
+      aria-controls="contactDialog" 
+      onclick="openDialog()">
+      Contact Us
+    </button>
+
+    <!-- A modal dialog box with role="dialog" -->
+    <div 
+      role="dialog" 
+      id="contactDialog" 
+      aria-modal="true" 
+      aria-labelledby="dialogTitle" 
+      aria-describedby="dialogDesc">
+
+      <!-- aria-labelledby points to the heading of the dialog -->
+      <h2 id="dialogTitle">Contact Form</h2>
+
+      <!-- aria-describedby provides additional dialog description -->
+      <p id="dialogDesc">Please fill out the form below to contact us.</p>
+
+      <form>
+        <label for="name">Name:</label>
+        <!-- aria-required marks a required field -->
+        <input id="name" type="text" aria-required="true" /><br /><br />
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" aria-required="true" /><br /><br />
+
+        <!-- aria-label gives an accessible label not visible on screen -->
+        <button type="submit" aria-label="Submit contact form">Submit</button>
+
+        <button type="button" onclick="closeDialog()">Cancel</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- A complementary region such as a sidebar -->
+  <aside role="complementary" aria-label="Related links">
+    <h3>Related Links</h3>
+    <ul>
+      <li><a href="#">Accessibility Guide</a></li>
+      <li><a href="#">WAI-ARIA Overview</a></li>
+    </ul>
+  </aside>
+
+  <!-- A live alert message -->
+  <div role="alert" aria-live="assertive">
+    <!-- This content would be announced immediately by screen readers -->
+  </div>
+
+  <!-- A simple log of user messages -->
+  <div role="log" aria-live="polite" aria-relevant="additions">
+    <!-- aria-relevant controls what types of changes are announced -->
+    <!-- Log messages could be dynamically added here -->
+  </div>
+
+  <!-- Footer landmark -->
+  <footer role="contentinfo" aria-label="Site footer">
+    <p>&copy; 2025 My Accessible Website</p>
+  </footer>
+
+  <script>
+    function openDialog() {
+      document.getElementById("contactDialog").classList.add("active");
+    }
+
+    function closeDialog() {
+      document.getElementById("contactDialog").classList.remove("active");
+    }
+  </script>
+</body>
+</html>
