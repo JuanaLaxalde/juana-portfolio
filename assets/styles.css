@@ -18,7 +18,7 @@
 	background-color: var(--light-gray);
 	font-family: monospace;
 	font-weight: 100;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin:auto;
 	height:100vh;
 	display: grid;
@@ -159,7 +159,15 @@
 	transition: all 0.3s ease;
 	}
 
+	#downloadable {
+	color: white;
+	}
 
+	#downloadable:hover {
+	color: var(--highlight-color);
+	transform: scale(1.08);
+	transition: all 0.3s ease;
+	}
 
 /* MAIN CONTENT STYLING & STRUCTURE ------------------------------------------ */
 	
