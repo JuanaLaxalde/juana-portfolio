@@ -258,7 +258,6 @@
     #html-renderer, #game-renderer {
 		display: flex;
 		flex-direction: row;
-		max-height: 600px;
 		align-items: center;
 	}
 	
@@ -371,7 +370,7 @@
 
 @media (max-width: 800px) {
 	:root {
-	--nav-height: 200px;
+	--nav-height: 165px;
 	--footer-height: 120px;
 	}
 
@@ -389,11 +388,10 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	height: var(--nav-height);
-	
+	height: auto;
 	padding: 1rem;
 	background-color: var(--dark-gray);
-	border-bottom: 4px solid var(--highlight-color);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
 	z-index: 1000;
 	}
 	
@@ -407,12 +405,14 @@
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	gap: 0.5rem;
+	column-gap: 0.5rem;
+	row-gap:0.5rem;
 	}
 	
 	.nav-bar li {
 	flex: 1 1 30%;
 	height: 60px;
+	margin: 0;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 25px;
@@ -461,6 +461,25 @@
 	
 	img {
 	margin-bottom: 1rem;
+	width: 90%;
+	}
+
+	#game-renderer {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	gap: 1rem;
+	}
+
+	#game-renderer iframe {
+	order: 2;
+	}
+
+	#game-renderer div {
+	order: 1;
+	margin: 0;
+	width: 90vw;
+	height: fit-content;
 	}
 	
 	.footer {
@@ -475,7 +494,6 @@
 	align-items: flex-start;
 	justify-content: center;
 	padding: 2rem;
-	
 	background-color: var(--dark-gray);
 	color: white;
 	box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.25);
