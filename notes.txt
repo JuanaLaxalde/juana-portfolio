@@ -1,0 +1,6 @@
+Icon-only links need accessible labels: li
+Nav text uses <br> for wrapping: lines 19, 21–22; replace with CSS block layout instead of <br>.
+Invalid attribute focus on the list: line 118; use tabindex="0" if needed.
+Absolute asset paths that break when not served from root: stylesheet link line 6 (/assets/styles.css) and fetch URL line 266 (/assets/htmlCode/...); make them relative (./assets/...).
+Consider deferring Prism script to avoid blocking render: line 12 (add defer).
+Add meta description for SEO: after line 5.
