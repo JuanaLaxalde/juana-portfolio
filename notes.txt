@@ -6,3 +6,28 @@ Consider deferring Prism script to avoid blocking render: line 12 (add defer).
 Add meta description for SEO: after line 5.
 
 Change h1 titles to h2
+change navbar fonts
+
+
+
+
+<h2>About This Site</h2>
+<p>
+	This portfolio page was hand-built with semantic HTML, custom CSS, and some JavaScript to add interacrivity. 
+	The layout uses CSS Grid and Flexbox to create a fixed left nav and fixed bottom footer with a scrollable 
+	main section on desktop. It also presents a responsive design for smaller screens with a single-column flex 
+	container with the nav and footer fixed to the top and bottom of the screen respectively. 
+</p>
+
+<h4>AI Usage Transparency</h4>
+<p>
+	I only relied on AI as a coding assistant, mainly for quick refactors, accessibility checks, concept revision,
+	and debugging nudges. Typical prompts were things like “simplify this layout for small screens,” “why 
+	is this iframe 404ing on GitHub Pages” and “suggest clearer copy for this section.” All implementation 
+	decisions, styling, and content were authored and reviewed by me.
+</p>
+<p>
+	The build is intentionally lightweight — no bundler or framework—so it serves fast on GitHub Pages. 
+	Assets are organized under <code>/assets</code> directory as follows - CSS sheets, icons, fonts, projects, and the p5 game. 
+	
+</p>
