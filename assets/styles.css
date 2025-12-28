@@ -444,7 +444,6 @@
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: center;
-	padding: 2rem;
 	color: white;
 	z-index: 1000;
 	}
@@ -500,8 +499,18 @@
 
 	.footer {
 		margin: 0;
-		padding-bottom: 5rem;
-		height: 100px;
+		align-items: center;
+		font-size: .9rem;
+		height: 90px;
 	}
+    .footer-link > svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    }
+
+	.footer-link {
+    height: 3rem;
+    width: 3rem;
+    }
 }
 
