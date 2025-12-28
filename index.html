@@ -13,14 +13,19 @@
 </head>
 
 <body class="page-container" >
+
+<button class="hamburger" aria-label="Menu">
+☰
+</button>
+
 <nav class="nav-bar">
-	<ul>
-		<li><a class="nav-link" href="#skills">Skills</a></li>
-		<li><a class="nav-link" href="#game-project">Game Project</a></li>
-		<li><a class="nav-link" href="#">PH</a></li>
-		<li><a class="nav-link" href="#">PH</a></li>
-		<li><a class="nav-link" href="#about-this-site">About This Site</a></li>
-	</ul>
+	<div class="nav-links">
+		<a class="nav-link" href="#skills">Skills</a>
+		<a class="nav-link" href="#game-project">Game Project</a>
+		<a class="nav-link" href="#">PH</a>
+		<a class="nav-link" href="#">PH</a>
+		<a class="nav-link" href="#about-this-site">About This Site</a>
+	</div>
 </nav>
 
 <main class="main-content">
@@ -224,5 +229,14 @@
 		});
 	</script>
 
+<!-- JS - Menu button for mobile site -->
+	<script>
+		const hamburger = document.querySelector(".hamburger");
+		const nav = document.querySelector(".nav-bar");
+
+		hamburger.addEventListener("click", () => {
+		nav.classList.toggle("active");
+		});
+	</script>
 </body>
 </html>
