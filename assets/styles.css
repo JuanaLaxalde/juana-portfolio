@@ -439,7 +439,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: var(--footer-height);
+	height: 10%;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -501,7 +501,7 @@
 		margin: 0;
 		align-items: center;
 		font-size: .9rem;
-		height: 90px;
+		
 	}
     .footer-link > svg {
     height: 1.5rem;

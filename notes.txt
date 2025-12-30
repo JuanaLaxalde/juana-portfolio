@@ -6,7 +6,7 @@ Consider deferring Prism script to avoid blocking render: line 12 (add defer).
 Add meta description for SEO: after line 5.
 
 Change h1 titles to h2
-change navbar fonts
+
 
 
 
