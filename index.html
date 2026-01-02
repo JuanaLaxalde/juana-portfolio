@@ -4,25 +4,20 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="/assets/styles.css" />
-	<script src="main.js" defer></script>
+	<script src="./assets/main.js" defer></script>
 	<title>Tech Portfolio</title>
-
-	<!-- Prism - css syntax highlighting -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" /> 
-	<!-- Prism - js syntax highlighting -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script> 
 </head>
 
 <body class="page-container" >
 
-<button class="hamburger" aria-label="Menu">
+<button class="nav-hamburger" aria-label="Menu">
 ☰
 </button>
 
 <nav class="nav-bar">
 	<div class="nav-links">
-		<a class="nav-link" href="#skills">Skills</a>
-		<a class="nav-link" href="#game-project">Game Project</a>
+		<a class="nav-link" href="#skills">My Studies</a>
+		<a class="nav-link" href="#scroller-game">Scroller Game</a>
 		<a class="nav-link" href="#drum-machine">Drum Machine</a>
 		<a class="nav-link" href="#">PH</a>
 		<a class="nav-link" href="#">PH</a>
@@ -98,7 +93,7 @@
 						<polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="12 14 10 16 12 18"></polyline>
 						<line x1="15" x2="17" y1="20" y2="12" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
 					</g>
-				</svg> <span> - As of December 2025</span>
+				</svg> <span id="activity-span"> - As of December 2025</span>
 			</h3>
 			<div id="activity-chart-flex">
 				<img src="assets/images/studyProgress.png"
@@ -117,35 +112,35 @@
 		</div>
 	</section>
 
-	<section id="game-project"> <!------------------------------------------------------------------------------------------------->
-		<h1>Samurai's Katana</h1>
-		<p>Learning about javascript's p5.js frontend library through a guided side-scroller game projects.</p>
-		<div id="game-instructions">
-			<h3>Game Instructions</h3>
-			<p><strong>A</strong> - Move Left<br>
-				<strong>D</strong> - Move Right<br>
-				<strong>W</strong>/<strong>SPACE</strong> - Jump<br>
-				<br>
-				<strong>✓</strong> Collect all Katanas. <br>
-				<strong>✓</strong> Avoid the boiling water pits. <br>
-				<strong>✓</strong> Get an extra life every 3 shields collected. <br>
-				<strong>✓</strong> Choose your direction, left or right. <br>
-				<strong>✓</strong> Game ends when you reach either breakpoint.<br>
-			</p>
+	<section id="scroller-game"> <!------------------------------------------------------------------------------------------------->
+		<h1>Scroller Game</h1>
+		<p>Learning about javascript's p5.js frontend library through a guided side-scroller game project.</p>
+		<p>
+			<strong>✓</strong> Collect all Katanas. <br>
+			<strong>✓</strong> Avoid the boiling water pits. <br>
+			<strong>✓</strong> Get an extra life every 3 shields collected. <br>
+			<strong>✓</strong> Choose your direction, left or right. <br>
+			<strong>✓</strong> Game ends when you reach either breakpoint.<br>
+		</p>
 
-			<p>- Click on the screen to start playing.</p>
-			<p>- Press <strong>esc</strong> to exit the game.</p>
+		<div id="game-container">
+			<iframe 
+				id="game-frame"
+				tabindex="0"
+				src="./assets/GameProject/index.html" 
+				
+				style="border: none; width: 100%; max-width: 1000px; height: 600px; border-radius: 8px;">
+			</iframe>
+
+			<div id="controls">
+				<h3>Controls</h3>
+				<p><strong>A</strong> - Move Left<br>
+					<strong>D</strong> - Move Right<br>
+					<strong>W</strong>/<strong>SPACE</strong> - Jump<br>
+					<strong>esc</strong> - Exit the game.
+				</p>
+			</div>
 		</div>
-		
-		
-		<iframe 
-			id="game-frame"
-			tabindex="0"
-			src="./assets/GameProject/index.html" 
-			
-			style="border: none; width: 100%; max-width: 1000px; height: 600px; border-radius: 8px;">
-		</iframe>
-		
 	</section>
 
 	<section id="drum-machine">
@@ -181,9 +176,6 @@
 			</div>
 		</div>
 
-        <p id='display'>
-        </p>
-
 	</section>
 
 	<section id="about-this-site"> <!------------------------------------------------------------------------------------------------->
@@ -210,7 +202,12 @@
 	</section>
 </main>
 
+<button class="footer-hamburger footer-link" aria-label="Menu">
+<
+</button>
+
 <footer class="footer">
+
 	<a class='footer-link' href="https://www.linkedin.com/in/juana-laxalde/" target="_blank">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="linkedin">
 			<path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"></path>
@@ -243,32 +240,5 @@
 	
 </footer>
 
-<!-- JS - Prevent Scroll Restoration -->
-	<script>
-		if ('scrollRestoration' in history) {
-			history.scrollRestoration = 'manual';
-		}
-	</script>
-
-	<!-- JS - Make Game Container Focusable -->
-	<script>
-		document.getElementById("game-frame").addEventListener("load", () => {
-		const frame = document.getElementById("game-frame");
-
-		frame.addEventListener("click", () => {
-		frame.focus();
-		});
-		});
-	</script>
-
-<!-- JS - Menu button for mobile site -->
-	<script>
-		const hamburger = document.querySelector(".hamburger");
-		const nav = document.querySelector(".nav-bar");
-
-		hamburger.addEventListener("click", () => {
-		nav.classList.toggle("active");
-		});
-	</script>
 </body>
 </html>
